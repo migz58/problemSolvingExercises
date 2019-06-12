@@ -1,0 +1,124 @@
+<div class="my-5 px-5">
+    <div class="text-center">
+        <img class="hacker-img" alt="Hackerrank Logo" src="../../assets/imgs/hackerrank.png">
+        <h2>Compare the Triplets</h2>
+    </div>
+
+    <div>
+        <h5>Problem:</h5>
+        <p>
+            Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points
+            on a scale from <br>
+            <b>1</b> to <b>100</b> for three categories: problem clarity, originality, and difficulty.<br><br>
+
+            We define the rating for Alice's challenge to be the triplet <b><i>a = (a[0],a[1],a[2])</i></b>, and the
+            rating for Bob's challenge to be the triple <b><i>b = (b[0],b[1],b[2])</i></b>. <br><br>
+
+            Your task is to find their comparison points by comparing <b><i>a[0]</i></b> with <b><i>b[0]</i></b>,
+            <b><i>a[1]</i></b> with <b><i>b[1]</i></b>, <b><i>a[2]</i></b> with <b><i>b[2]</i></b>. <br>
+        </p>
+        <ul>
+            <li>if <b><i>a[i] > b[i]</i></b>, then Alice is awarded <b><i>1</i></b> point.</li>
+            <li>if <b><i>a[i] < b[i]</i></b>, then Bob is awarded <b><i>1</i></b> point.</li>
+            <li>if <b><i>a[i] = b[i]</i></b>, then neither person receives a point.</li>
+        </ul>
+
+        <p>
+            Comparison points is the total points a person earned.<br>
+            Given <b><i>a</i></b> and <b><i>b</i></b>, determine their respective comparison points.<br>
+            For example, <b><i>a = [1,2,3]</i></b> and <b><i>b = [3,2,1]</i></b>. For elements <b>0</b>, Bob is awarded a point because <b><i>a[0] < b[0]</i></b>. For the equal <br>
+            elements <b><i>a[1]</i></b> and <b><i>b[1]</i></b>, no points are earned. Finally, for elements <b><i>2</i></b>, <b><i>a[2] > b[2]</i></b> so Alice receives a point. <br>
+            Your return array would be <b><i>[1,1]</i></b> with Alice's score first and Bob's second.
+        </p>
+
+        <h5>Function Description:</h5>
+        <p>
+            Complete the function compareTriplets in the editor below. It must return an array of two integers, the first being Alice's score and the second being Bob's.<br><br>
+            compareTriplets has the following parameter(s):
+        </p>
+        <ul>
+            <li>a: an array of integers representing Alice's challenge rating</li>
+            <li>b: an array of integers representing Bob's challenge rating</li>
+        </ul>
+
+        <h5>Input Format</h5>
+        <p>
+            The first line contains <b><i>3</i></b> space-separated integers, <b><i>a[0]</i></b>, <b><i>a[1]</i></b>, and <b><i>a[2]</i></b>, describing the respective values in triplet <b><i>a</i></b>. <br>
+            The second line contains <b><i>3</i></b> space-separated integers, <b><i>b[0]</i></b>, <b><i>b[1]</i></b>, and <b><i>b[2]</i></b>, describing the respective values in triplet <b><i>b</i></b>.
+        </p>
+
+        <h5>Constraints</h5>
+        <ul>
+            <li><b><i>1 <= a[i] <= 100</i></b></li>
+            <li><b><i>1 <= b[i] <= 100</i></b></li>
+        </ul>
+
+        <h5>Output Format</h5>
+        <p>
+            Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
+        </p>
+
+        <h5>Sample Input 0</h5>
+        <p>
+            5 6 7<br>
+            3 6 10
+        </p>
+
+        <h5>Sample Output 0</h5>
+        <p>
+            1 1
+        </p>
+
+        <h5>Explanation 0</h5>
+        <p>
+            In this example:
+        </p>
+        <ul>
+            <li><b><i>a = (a[0],a[1],a[2]) = (5,6,7)</i></b></li>
+            <li><b><i>b = (b[0],b[1],b[2]) = (3,6,10)</i></b></li>
+        </ul>
+        <p>
+            Now, let's compare each individual score:
+        </p>
+        <ul>
+            <li><b><i>a[0] > b[0]</i></b>, so Alice receives <b><i>1</i></b> point.</li>
+            <li><b><i>a[1] = b[1]</i></b>, so nobody receives a point.</li>
+            <li><b><i>a[2] < b[2]</i></b>, so Bob receives <b><i>1</i></b> point.</li>
+        </ul>
+        <p>
+            Alice's comparison score is <b><i>1</i></b>, and Bob's comparison score is <b><i>1</i></b>. Thus, we return the array <b><i>[1,1]</i></b>.
+        </p>
+
+        <h5>Sample Input 1</h5>
+        <p>
+            17 28 30<br>
+            99 16 8
+        </p>
+
+        <h5>Sample Output 1</h5>
+        <p>
+            2 1
+        </p>
+
+        <h5>Explanation 1</h5>
+        <p>
+            Comparing the <b><i>0th</i></b> elements, <b><i>17 < 99</i></b> so Bob receives a point. <br>
+            Comparing the <b><i>1st</i></b> and <b><i>2nd</i></b> elements, <b><i>28 > 16</i></b> and <b><i>30 > 8</i></b> so Alice receives two points. <br>
+            The return array is <b><i>[2,1]</i></b>.
+        </p>
+    </div>
+
+    <hr>
+    <div class="text-center">
+        <img class="compareTriplets-img" alt="compareTriplets answer" src="../../assets/imgs/compareTriplets.JPG"><br>
+        <b>Check Console for Answer (Press F12)</b>
+    </div>
+
+    <hr>
+    <div class="form-row">
+        <div class="col text-center">
+            <button id=btnPTBack type="submit" class="btn btn-danger btn-lg w-25 mx-auto"
+                (click)="goBack()">Back</button>
+        </div>
+    </div>
+</div>
