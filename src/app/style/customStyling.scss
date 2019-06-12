@@ -1,9 +1,14 @@
+li{
+    list-style-type: none;
+}
 //HOME Page
 .home-links{
     color: #139FA1;
 }
 .home-links:hover{
     color: #12F3F7;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 //HackerRank Home
@@ -15,4 +20,6 @@
 }
 .hacker-rank-links:hover{
     color: #00FF5A;
+    cursor: pointer;
+    text-decoration: underline;
 }
