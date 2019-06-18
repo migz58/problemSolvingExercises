@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+//Angular Training
+import { AngularTrainingComponent } from './angularTraining/angularTraining';
+import { JSPDFTutorialComponent } from './angularTraining/jsPDFTutorial/jsPDFTutorial';
+
 //HackerRank
 import { HackerRankHomeComponent } from './hacker-rank-home/hacker-rank-home.component';
 
@@ -23,12 +27,16 @@ import { NewYearChaosComponent } from './hacker-rank-home/interviewPrep/arrays/n
   declarations: [
     AppComponent,
     HomeComponent,
+    AngularTrainingComponent,
+    JSPDFTutorialComponent,
+
     HackerRankHomeComponent,
     ProblemSolvingComponent,
     SimpleArraySumComponent,
     CompareTripletsComponent,
     DiagonalDifferenceComponent,
     StaircaseComponent,
+    
     InterviewPrepComponent,
     ArraysComponent,
     LeftRotationComponent,

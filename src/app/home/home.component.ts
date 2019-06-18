@@ -10,11 +10,13 @@ export class HomeComponent implements OnInit {
     title = 'Problem Solving Exercises';
     constructor(private router: Router) { }
 
-    ngOnInit() {
+    ngOnInit() {}
+
+    angularHome(){
+        this.router.navigate(['/angularTraining']);
     }
 
     hackerRankHome(){
         this.router.navigate(['/hackerRankHome']);
     }
-
 }
