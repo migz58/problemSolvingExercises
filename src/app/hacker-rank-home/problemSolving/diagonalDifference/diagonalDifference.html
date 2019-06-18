@@ -1,0 +1,86 @@
+<div class="my-5 px-5">
+    <div class="text-center">
+        <img class="hacker-img" alt="Hackerrank Logo" src="../../assets/imgs/hackerrank.png">
+        <h2>Diagonal Difference</h2>
+    </div>
+
+    <div>
+        <h5>Problem:</h5>
+        <p>
+            Given a square matrix, calculate the absolute difference between the sums of its diagonals.<br>
+            For example, the square matrix <b><i>arr</i></b> is shown below:<br><br>
+        
+            1 2 3<br>
+            4 5 6<br>
+            9 8 9
+            <br><br>
+
+            The left-to-right diagonal = <b><i>1 + 5 + 9 = 15</i></b>. The right to left diagonal = <b><i>3 + 5 + 9 = 17</i></b>. Their absolute difference is <b><i>|15 - 17| = 2</i></b>.
+        </p>
+
+        <h5>Function description</h5>
+        <p>
+            Complete the <b>diagonalDifference</b> function in the editor below. It must return an integer representing the absolute diagonal difference.<br><br>
+            > arr: an array of integers.
+        </p>
+
+        <h5>Input Format</h5>
+        <p>
+            The first line contains a single integer, <b><i>n</i></b>, the number of rows and columns in the matrix <b><i>arr</i></b>. 
+            Each of the next <b><i>n</i></b> lines describes a row, <b><i>arr[i]</i></b>, and consists of <b><i>n</i></b> space-separated integers <b><i>arr[i][j]</i></b>.
+        </p>
+
+        <h5>Constraints</h5>
+        <p>
+            <b><i>-100 <= arr[i][j] <= 100</i></b>
+        </p>
+
+        <h5>Output Format</h5>
+        <p>
+            Print the absolute difference between the sums of the matrix's two diagonals as a single integer.
+        </p>
+
+        <h5>Sample Input</h5>
+        <p>
+            3<br>
+            11 2 4<br>
+            4 5 6<br>
+            10 8 -12
+        </p>
+
+        <h5>Sample Output</h5>
+        <p>
+            15
+        </p>
+
+        <h5>Explanation</h5>
+        <p>
+            The primary diagonal is:<br>
+            11 5 -12<br><br>
+
+            Sum across the primary diagonal: 11 + 5 - 12 = 4<br><br>
+
+            The secondary diagonal is:<br>
+            4 5 10<br><br>
+
+            Sum across the secondary diagonal: 4 + 5 10 = 19<br>
+            Difference: |4 - 19| = 15<br><br>
+
+            <b>Note:</b> |x| is the <i>absolute value</i> of x
+        </p>
+    </div>
+
+    <hr>
+    <div class="text-center">
+        <img class="diagonalDifference-img" alt="diagonalDifference answer" src="../../assets/imgs/diagonalDifference.JPG"><br>
+        <b>Check Console for Answer (Press F12)</b>
+    </div>
+
+    <hr>
+    <div class="form-row">
+        <div class="col text-center">
+            <button id=btnPTBack type="submit" class="btn btn-danger btn-lg w-25 mx-auto"
+                (click)="goBack()">Back</button>
+        </div>
+    </div>
+</div>

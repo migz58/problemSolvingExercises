@@ -18,7 +18,7 @@ export class HackerRankHomeComponent implements OnInit {
     }
 
     interviewPrep(){
-        alert("Still need to create files; Go get it BOI");
+        this.router.navigate(['/interviewPrep']);
     }
 
     goBack() {

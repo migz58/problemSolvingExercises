@@ -21,9 +21,12 @@ export class ProblemSolvingComponent implements OnInit {
         this.router.navigate(['/compareTriplets']);
     }
 
-    veryBigSum(){
-        //this.router.navigate([]);
-        alert("Still need to create Big sum files; Go get it BOI");
+    diagonalDifference(){
+        this.router.navigate(['/diagonalDifference']);
+    }
+
+    stairCase(){
+        this.router.navigate(['/staircase']);
     }
 
     goBack() {
