@@ -11,6 +11,7 @@ import { StaircaseComponent } from './hacker-rank-home/problemSolving/staircase/
 import { InterviewPrepComponent } from './hacker-rank-home/interviewPrep/interviewPrep';
 import { ArraysComponent } from './hacker-rank-home/interviewPrep/arrays/arrays';
 import { LeftRotationComponent } from './hacker-rank-home/interviewPrep/arrays/leftRotation/leftRotation';
+import { NewYearChaosComponent } from './hacker-rank-home/interviewPrep/arrays/newYearChaos/newYearChaos';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: '/home' },
@@ -23,7 +24,8 @@ const routes: Routes = [
     { path: 'staircase', component: StaircaseComponent },
     { path: 'interviewPrep', component: InterviewPrepComponent },
     { path: 'arrays', component: ArraysComponent },
-    { path: 'leftRotation', component: LeftRotationComponent }
+    { path: 'leftRotation', component: LeftRotationComponent },
+    { path: 'newYearChaos', component: NewYearChaosComponent }
 ];
 
 @NgModule({

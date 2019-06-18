@@ -16,7 +16,7 @@ export class ArraysComponent implements OnInit {
     }
 
     newYearChaos(){
-        alert("Files to be created");
+        this.router.navigate(['/newYearChaos']);
     }
 
     goBack() {

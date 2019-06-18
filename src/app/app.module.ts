@@ -17,6 +17,7 @@ import { StaircaseComponent } from './hacker-rank-home/problemSolving/staircase/
 import { InterviewPrepComponent } from './hacker-rank-home/interviewPrep/interviewPrep';
 import { ArraysComponent } from './hacker-rank-home/interviewPrep/arrays/arrays';
 import { LeftRotationComponent } from './hacker-rank-home/interviewPrep/arrays/leftRotation/leftRotation';
+import { NewYearChaosComponent } from './hacker-rank-home/interviewPrep/arrays/newYearChaos/newYearChaos';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LeftRotationComponent } from './hacker-rank-home/interviewPrep/arrays/l
     StaircaseComponent,
     InterviewPrepComponent,
     ArraysComponent,
-    LeftRotationComponent
+    LeftRotationComponent,
+    NewYearChaosComponent
   ],
   imports: [
     BrowserModule,

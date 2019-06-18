@@ -1,0 +1,108 @@
+<div class="my-5 px-5">
+    <div class="text-center">
+        <img class="hacker-img" alt="Hackerrank Logo" src="../../assets/imgs/hackerrank.png">
+        <h2>New Year Chaos</h2>
+    </div>
+
+    <div>
+        <h5>Problem:</h5>
+        <p>
+            It's New Year's Day and everyone's in line for the Wonderland rollercoaster ride! There are a number of people queued up, and each person wears a sticker indicating their initial position in the queue. Initial positions increment by <b>1</b> from <b>1</b> at the front of the line to <b><i>n</i></b> at the back.<br><br>
+
+            Any person in the queue can bribe the person directly in front of them to swap positions. If two people swap positions, they still wear the same sticker denoting their original places in line. One person can bribe at most two others. For example, if <b><i>n</i> = 8</b> and <b><i>Person</i> 5</b> bribes <b><i>Person</i> 4</b>, the queue will look like this: <b>1, 2, 3, 5, 4, 6, 7, 8</b>.<br><br>
+
+            Fascinated by this chaotic queue, you decide you must know the minimum number of bribes that took place to get the queue into its current state!
+        </p>
+
+        <h5>Function Description</h5>
+        <p>
+            Complete the function minimumBribes in the editor below. It must print an integer representing the minimum number of bribes necessary, or Too chaotic if the line configuration is not possible.<br><br>
+
+            minimumBribes has the following parameter(s):<br>
+            > q: an array of integers
+        </p>
+
+        <h5>Input Format</h5>
+        <p>
+            The first line contains an integer <b><i>t</i></b>, the number of test cases.<br><br>
+
+            Each of the next <b><i>t</i></b> pairs of lines are as follows: <br>
+            > The first line contains an integer <b><i>t</i></b>, the number of people in the queue <br>
+            > The second line has <b><i>n</i></b> space-separated integers describing the final state of the queue.
+        </p>
+
+        <h5>Constraints</h5>
+        <p>
+            > <b><i>1 <= t <= 10</i></b>.<br>
+            > <b><i>1 <= n <= 10<sup>5</sup></i></b>
+        </p>
+
+        <h5>Subtasks</h5>
+        <p>
+            For <b><i>60%</i></b> score <b><i>1 <= n <= 10<sup>3</sup></i></b><br>
+            For <b><i>100%</i></b> score <b><i>1 <= n <= 10<sup>5</sup></i></b>
+        </p>
+
+        <h5>Output Format</h5>
+        <p>
+            Print an integer denoting the minimum number of bribes needed to get the queue into its final state. Print Too chaotic if the state is invalid, i.e. it requires a person to have bribed more than <b>2</b> people.
+        </p>
+
+        <h5>Sample Input</h5>
+        <p>
+            2<br>
+            5<br>
+            2 1 5 3 4<br>
+            5<br>
+            2 5 1 3 4
+        </p>
+
+        <h5>Sample Output</h5>
+        <p>
+            3<br>
+            Too chaotic
+        </p>
+
+        <h5>Explanation</h5>
+        <h6>Test Case 1</h6>
+        <p>
+            the inital state:
+        </p>
+        <img alt="newYearChaos pic1" src="../../assets/imgs/interviewPrep/arrays/pic1.png">
+        <p>
+            After person <b>5</b> moves one position ahead by bribing person <b>4</b>:
+        </p>
+        <img alt="newYearChaos pic2" src="../../assets/imgs/interviewPrep/arrays/pic2.png">
+        <p>
+            Now person <b>5</b> moves another position ahead by bribing person <b>3</b>:
+        </p>
+        <img alt="newYearChaos pic3" src="../../assets/imgs/interviewPrep/arrays/pic3.png">
+        <p>
+            After person <b>2</b> moves one position ahead by bribing person <b>1</b>:
+        </p>
+        <img alt="newYearChaos pic4" src="../../assets/imgs/interviewPrep/arrays/pic4.png">
+        <p>
+            So the final state is <b>2, 1, 5, 3, 4</b> after three bribing operations.
+        </p>
+
+        <h6>Test Case 2</h6>
+        <p>
+            No person can bribe more than two people, so its not possible to achieve the input state.
+        </p>
+    </div>
+
+    <hr>
+    <div class="text-center">
+        <img class="newYearChaos-img" alt="newYearChaos answer"
+            src="../../assets/imgs/interviewPrep/arrays/newYearChaos.JPG"><br>
+        <b>Check Console for Answer (Press F12)</b>
+    </div>
+
+    <hr>
+    <div class="form-row">
+        <div class="col text-center">
+            <button id=btnPTBack type="submit" class="btn btn-danger btn-lg w-25 mx-auto"
+                (click)="goBack()">Back</button>
+        </div>
+    </div>
+</div>
