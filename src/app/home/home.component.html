@@ -1,6 +1,6 @@
 <div class="my-5 px-5">
     <div style="text-align:center">
-        <h1 class="home-title">
+        <h1 id="logo">
             Welcome to {{ title }}!
         </h1>
         <img width="300" alt="Angular Logo"
@@ -8,13 +8,20 @@
     </div>
 
     <div class="text-center">
-        <ul>
-            <li>
-                <h2 class="home-links" (click)="angularHome()">Angular Exercises</h2>
-            </li>
-            <li>
-                <h2 class="home-links" (click)="hackerRankHome()">HackerRank Problems</h2>
-            </li>
-        </ul>
+        <div class="container padding-5">
+            <div class="row">
+                <div class="col" (click)="angularHome()">
+                    <div class="home-card">
+                        <h6 class="menu-title">Angular Exercises</h6>
+                    </div>
+                </div>
+
+                <div class="col" (click)="hackerRankHome()">
+                    <div class="home-card">
+                        <h6 class="menu-title">HackerRank Problems</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,6 +1,65 @@
 li{
     list-style-type: none;
 }
+//Logo
+#logo {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+
+#logo:after {
+    /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: block;
+    text-shadow: none;
+}
+//Padding
+.padding-3{
+    padding: 3%
+}
+.padding-5{
+    padding: 5%
+}
+//Menu cards
+.home-card,
+.angular-card,
+.hacker-rank-card{
+    border: 1px solid;
+    padding: 35px;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 8px;
+    background-image: linear-gradient(red, #C71414);
+}
+.hacker-rank-card{
+    background-image: linear-gradient(green, #2BBE5E);
+}
+.home-card:hover,
+.angular-card:hover,
+.hacker-rank-card:hover{
+    background: #9A1616;
+    box-shadow: none;
+    cursor: pointer;
+}
+.hacker-rank-card:hover{
+    background: #00FF5A;
+}
+.menu-title{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 26px;
+}
 //HOME Page
 .home-links{
     color: #139FA1;

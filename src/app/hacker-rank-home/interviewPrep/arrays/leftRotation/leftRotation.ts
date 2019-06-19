@@ -22,7 +22,8 @@ export class LeftRotationComponent implements OnInit {
             arr.push(a[i]);
         };
         for (var j = 1; j <= d; j++) {
-            arr.shift(arr.push(arr[0]));
+            //COMMENTED OUT CAUSE IT BROKE THE PROJECT ON RESTART
+            //arr.shift(arr.push(arr[0]));
         }
         return arr;
     }

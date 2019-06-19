@@ -4,20 +4,26 @@
     </div>
 
     <div class="text-center">
-        <ul>
-            <li>
-                <h2 class="hacker-rank-links" (click)="problemSolving()">Problem Solving</h2>
-            </li>
-            <li>
-                <h2 class="hacker-rank-links" (click)="interviewPrep()">Interview Preparation Kit</h2>
-            </li>
-        </ul>
+        <div class="container padding-5">
+            <div class="row">
+                <div class="col" (click)="problemSolving()">
+                    <div class="hacker-rank-card">
+                        <h6 class="menu-title">Problem Solving</h6>
+                    </div>
+                </div>
+                <div class="col" (click)="interviewPrep()">
+                    <div class="hacker-rank-card">
+                        <h6 class="menu-title">Interview Preparation Kit</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <hr>
     <div class="form-row">
         <div class="col text-center">
-            <button id=btnPTBack type="submit" class="btn btn-danger btn-lg w-25 mx-auto"
+            <button id=btnPTBack type="submit" class="btn btn-success btn-lg w-25 mx-auto"
                 (click)="goBack()">Back</button>
         </div>
     </div>
