@@ -1,5 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule }       from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
+import { FormsModule }    from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,11 @@ import { HomeComponent } from './home/home.component';
 //Angular Training
 import { AngularTrainingComponent } from './angularTraining/angularTraining';
 import { JSPDFTutorialComponent } from './angularTraining/jsPDFTutorial/jsPDFTutorial';
+//Hall Of Heros
+import { HallOfHerosComponent } from './angularTraining/hallOFHeros/hallOFHeros';
+import { HeroDashboardComponent } from './angularTraining/hallOFHeros/dashboard/heroDashboard';
+import { HerosComponent } from './angularTraining/hallOFHeros/heros/heros';
+import { HeroDetailComponent } from './angularTraining/hallOFHeros/heroDetail/heroDetail';
 
 //HackerRank
 import { HackerRankHomeComponent } from './hacker-rank-home/hacker-rank-home.component';
@@ -29,6 +36,10 @@ import { NewYearChaosComponent } from './hacker-rank-home/interviewPrep/arrays/n
     HomeComponent,
     AngularTrainingComponent,
     JSPDFTutorialComponent,
+    HallOfHerosComponent,
+    HeroDashboardComponent,
+    HerosComponent,
+    HeroDetailComponent,
 
     HackerRankHomeComponent,
     ProblemSolvingComponent,
@@ -44,7 +55,9 @@ import { NewYearChaosComponent } from './hacker-rank-home/interviewPrep/arrays/n
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

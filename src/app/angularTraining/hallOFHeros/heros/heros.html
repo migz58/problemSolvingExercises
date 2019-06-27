@@ -1,0 +1,17 @@
+<h3 class="text-center">My Heroes</h3>
+
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label">Hero Name:</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Enter Hero name">
+    </div>
+</div>
+
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{hero.id}}">
+            <b>{{hero.id}}</b> {{hero.name}}
+        </a>
+        <span title="delete hero" class="badge badge-danger badge-pill" (click)="delete(hero)">X</span>
+    </li>
+</ul>

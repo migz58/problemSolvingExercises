@@ -16,6 +16,10 @@ export class AngularTrainingComponent implements OnInit {
         alert("Files to be created");
     }
 
+    hallOfHeros(){
+        this.router.navigate(['/hallOfHeros']);
+    }
+
     jsPDFTutorial(){
         this.router.navigate(['/jsPDFTutorial']);
     }

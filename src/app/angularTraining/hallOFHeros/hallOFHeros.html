@@ -1,0 +1,22 @@
+<div class="my-5 px-5">
+    <h1>{{title}}</h1>
+
+    <button (click)="selectHeroDash()" class="btn btn-primary w-20 mx-auto tabs-margin">Dashboard</button>
+    <button (click)="selectHeros()" class="btn btn-primary w-20 mx-auto tabs-margin">Heroes</button>
+    <hr>
+
+    <div *ngIf="dash == true">
+        <app-heroDashboard></app-heroDashboard>
+    </div>
+    <div *ngIf="dash != true">
+        <app-heros></app-heros>
+    </div>
+
+    <hr>
+    <div class="form-row">
+        <div class="col text-center">
+            <button id=btnPTBack type="submit" class="btn btn-danger btn-lg w-25 mx-auto"
+                (click)="goBack()">Back</button>
+        </div>
+    </div>
+</div>

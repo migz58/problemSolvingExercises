@@ -5,6 +5,11 @@ import { HomeComponent } from './home/home.component';
 //AngularTraining
 import { AngularTrainingComponent } from './angularTraining/angularTraining';
 import { JSPDFTutorialComponent } from './angularTraining/jsPDFTutorial/jsPDFTutorial';
+//Hall Of Heros
+import { HallOfHerosComponent } from './angularTraining/hallOFHeros/hallOFHeros';
+import { HeroDashboardComponent } from './angularTraining/hallOFHeros/dashboard/heroDashboard';
+import { HerosComponent } from './angularTraining/hallOFHeros/heros/heros';
+import { HeroDetailComponent } from './angularTraining/hallOFHeros/heroDetail/heroDetail';
 
 //HackerRank
 import { HackerRankHomeComponent } from './hacker-rank-home/hacker-rank-home.component';
@@ -24,6 +29,10 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'angularTraining', component: AngularTrainingComponent },
     { path: 'jsPDFTutorial', component: JSPDFTutorialComponent },
+    { path: 'hallOfHeros', component: HallOfHerosComponent },
+    { path: 'herosDash', component: HeroDashboardComponent },
+    { path: 'heros', component: HerosComponent },
+    { path: 'detail/:id', component: HeroDetailComponent },
 
     { path: 'hackerRankHome', component: HackerRankHomeComponent },
     { path: 'problemSolving', component: ProblemSolvingComponent },

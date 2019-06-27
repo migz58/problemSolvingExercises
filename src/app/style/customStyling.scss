@@ -16,7 +16,6 @@ li{
 }
 
 #logo:after {
-    /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
     background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
     background-size: 4px 4px;
     -webkit-background-clip: text;
@@ -25,12 +24,19 @@ li{
     display: block;
     text-shadow: none;
 }
+//Margins
+.tabs-margin{
+    margin-left: 10px !important;
+}
 //Padding
 .padding-3{
     padding: 3%
 }
 .padding-5{
     padding: 5%
+}
+.nav-space{
+    padding: 1px;
 }
 //Menu cards
 .home-card,
@@ -58,7 +64,7 @@ li{
 .menu-title{
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    font-size: 26px;
+    font-size: 18px;
 }
 //HOME Page
 .home-links{
@@ -78,6 +84,22 @@ li{
     color: #F73A3A;
     cursor: pointer;
     text-decoration: underline;
+}
+
+//HEROS
+//HeroDash
+.custom-card{
+    box-shadow: 5px 10px 8px #888888;
+    border: 0.7px solid grey;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-image: linear-gradient(#C71414, rgb(214, 42, 42));
+}
+.custom-card:hover{
+    background-color: rgb(129, 15, 15);
+    color: black;
+    text-shadow: none;
 }
 
 //HackerRank Home
